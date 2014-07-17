@@ -6,20 +6,20 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Stefan
+tagline:          
+url:              http://b00nb0b.github.io/blog/
 paginate:         1
 baseurl:          http://b00nb0b.github.io/blog/
 author:
   name:           Stefan Hasenstab
-  url:            https://twitter.com/mdo
+  url:            https://twitter.com/b00nb0b
   email:          b00nb0b@gmail.com
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/b00nb0b/blog
   
 pages_list:       
   About: '/about'
