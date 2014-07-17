@@ -22,6 +22,6 @@ github:
   repo:           https://github.com/b00nb0b/blog
   
 pages_list:       
-  About: '/about'
-  Archive: '/archive'
-  Feed: '/atom.xml'
+  About: 'about'
+  Archive: 'archive'
+  Feed: 'atom.xml'
