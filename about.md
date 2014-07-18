@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Hello!
+I'm software developer at [Campoint](http://www.campoint.net).
