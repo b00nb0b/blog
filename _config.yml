@@ -8,9 +8,9 @@ permalink:        pretty
 # Setup
 title:            Stefan
 tagline:          
-url:              http://b00nb0b.github.io/blog/
+url:              http://stha.github.io/
 paginate:         1
-baseurl:          http://b00nb0b.github.io/blog/
+baseurl:          http://stha.github.io/
 author:
   name:           Stefan Hasenstab
   url:            https://twitter.com/b00nb0b
@@ -19,7 +19,7 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/b00nb0b/blog
+  repo:           https://github.com/stha/stha.github.io
   
 pages_list:       
   About: 'about'
