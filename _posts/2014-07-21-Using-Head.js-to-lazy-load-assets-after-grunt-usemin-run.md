@@ -6,7 +6,7 @@ Recently i had to improve the loading behavior of a mobile optimized webpage and
 <body>
   <p>Some Content here</p>
   
-  <script>http://my/external/script/here</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 ```
 
@@ -17,7 +17,7 @@ This approach works only with javascript tags, because according to the [w3c spe
 
 ```html
 <body>
-  <script async>http://my/external/script/here</script>
+  <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <p>Some more Content here</p>
 </body>
