@@ -1,4 +1,4 @@
-Recently i had to improve the loading behavior of a mobile optimized webpage and used the [PageSpeed Insights - Tool](https://developers.google.com/speed/pagespeed/insights/) from Google to analyze my page. It told me to remove css and javascript resources which blocks "above the fold" content from loading, which means that users with low bandwith will see nothing except a blank page before the external resources finished loading. Now there are several ways to avoid this. 
+Recently i had to improve the loading behavior of a mobile optimized webpage and used the [PageSpeed Insights - Tool](https://developers.google.com/speed/pagespeed/insights/) from Google to analyze my page. It told me to remove css and javascript resources which blocks "above the fold" content from loading, which means that users with low bandwidth will see nothing except a blank page before the external resources finished loading. Now there are several ways to avoid this. 
 
 ##### 1. Putting the resource on the end of the `body` block:
 
@@ -23,7 +23,7 @@ This approach works only with javascript tags, because according to the [w3c spe
 </body>
 ```
 
-This little addition to a otherwise 100% usual `<script>` element tells the browser to NOT block on loading this resource. Furthermore Safari has added a `defer` attribute which behaves exactly like `async` except one difference: `defer` guarantees that the execution order of the scripts is exactly like their occurrence order in the html. `async` doesn't to something like this. The scripts could be executed absolutly random.
+This little addition to a otherwise 100% usual `<script>` element tells the browser to NOT block on loading this resource. Furthermore Safari has added a `defer` attribute which behaves exactly like `async` except one difference: `defer` guarantees that the execution order of the scripts is exactly like their occurrence order in the html. `async` doesn't to something like this. The scripts could be executed absolutely random.
 
 ##### 2. Using a script loader
 
