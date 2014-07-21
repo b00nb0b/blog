@@ -17,10 +17,10 @@ This approach works only with javascript tags, because according to the [w3c spe
 
 ```html
 <body>
-  <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" onload="jQueryReady()"></script>
 
   <p>Some more Content here</p>
 </body>
 ```
 
-In progress
+This little addition to a otherwise 100% usual `<script>` element tells the browser to NOT block on loading this resource. Furthermore Safari has added a `defer` attribute which behaves exactly like `async` except one difference: `defer` guarantees that the execution order of the scripts is exactly like their occurrence order in the html. `async` doesn't to something like this. The scripts could be executed absolutly random.
