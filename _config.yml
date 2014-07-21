@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Stefan
+title:            Stefan personal blog
 tagline:          
 url:              http://stha.github.io/
 paginate:         1
