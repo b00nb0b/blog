@@ -55,7 +55,7 @@ replace: {
 }
 ```
 
-This is the example part of my `Gruntfile.js` which configures the [grunt-text-replace](https://github.com/yoniholmes/grunt-text-replace) plugin to search for all `script` and `<link>` elements and replace them with `<script>head.load('filename')</script>`. Futhermore headjs provides a `ready`-callback, which is triggered when all resources are sucessfully loaded. My app is bootstraped inside the `initAngularApp` function, which will accordingly wrapped by `head.ready(function() { initAngularApp... });`. Since i dont want it in my development environment I do this step at the very end of my grunt task list:
+This is the example part of my `Gruntfile.js` which configures the [grunt-text-replace](https://github.com/yoniholmes/grunt-text-replace) plugin to search for all `script` and `<link>` elements and replace them with `<script>head.load('filename')</script>`. Futhermore headjs provides a `ready`-callback, which is triggered when all resources are successfully loaded. My app is bootstrapped inside the `initAngularApp` function, which will accordingly wrapped by `head.ready(function() { initAngularApp... });`. Since i don't want it in my development environment I do this step at the very end of my grunt task list:
 
 ```js
 grunt.registerTask('build', [
