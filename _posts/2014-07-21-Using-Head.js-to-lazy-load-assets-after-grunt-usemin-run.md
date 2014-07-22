@@ -35,6 +35,8 @@ This little addition to a otherwise 100% usual `<script>` element tells the brow
 
 The solutions mentioned above do not work for javascript web application written in [AngularJS](http://www.angularjs.org) or likewise frameworks. This frameworks usually need a specific execution order which can not achieved in all browsers with the simple methods. To get around this issue we can use a script loader. Just to name a few: [RequireJS](http://requirejs.org/), [HeadJS](http://headjs.com), [LABJS](http://labjs.com). I decided to use Head.js because its eligible whether for javascript or css and furthermore my assets are already compressed, uglified and concatenated by grunt and usemin.
 
+In the following section I will show you some parts of my solution with headjs:
+
 
 ```js
 replace: {
