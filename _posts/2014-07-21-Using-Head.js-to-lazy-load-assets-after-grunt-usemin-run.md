@@ -35,6 +35,47 @@ This little addition to a otherwise 100% usual `<script>` element tells the brow
 
 The solutions mentioned above do not work for javascript web application written in [AngularJS](http://www.angularjs.org) or likewise frameworks. This frameworks usually need a specific execution order which can not achieved in all browsers with the simple methods. To get around this issue we can use a script loader. Just to name a few: [RequireJS](http://requirejs.org/), [HeadJS](http://headjs.com), [LABJS](http://labjs.com). I decided to use Head.js because its eligible whether for javascript or css and furthermore my assets are already compressed, uglified and concatenated by grunt and usemin.
 
-work to do...
+
+```json
+replace: {
+    headjs: {
+        src: ['<%= dist %>/index.php'],
+        dest: '<%= dist %>/index.php',
+        replacements: [{
+            from: /<script src="(.*\.js)"><\/script>/g,
+            to: '<script>head.load(\'$1\');<\/script>'
+        },{
+            from: /(initAngularApp.*)/g,
+            to: 'head.ready(function() { $1 });'
+        },{
+            from: /<link.*href="(.*\.css)".*>/g,
+            to: '<script>head.load(\'$1\');<\/script>'
+        }]
+    }
+}
+```
+
+This is the example part of my `Gruntfile.js` which configures the [grunt-text-replace](https://github.com/yoniholmes/grunt-text-replace) plugin to search for all `script` and `<link>` elements and replace them with `<script>head.load('filename')</script>`. Futhermore headjs provides a `ready`-callback, which is triggered when all resources are sucessfully loaded. My app is bootstraped inside the `initAngularApp` function, which will accordingly wrapped by `head.ready(function() { initAngularApp... });`. Since i dont want it in my development environment I do this step at the very end of my grunt task list:
+
+```json
+grunt.registerTask('build', [
+        'clean:build',
+        'jshint',
+        'less',
+        'useminPrepare',
+        'imagemin',
+        'cssmin',
+        'htmlmin',
+        'concat',
+        'copy:dist',
+        'ngmin',
+        'uglify',
+        'rev',
+        'usemin',
+        'replace:headjs'
+    ]);
+```
+      
+
 
 -- in progress --
