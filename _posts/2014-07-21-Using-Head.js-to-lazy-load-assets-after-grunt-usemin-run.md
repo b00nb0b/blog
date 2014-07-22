@@ -78,6 +78,4 @@ grunt.registerTask('build', [
     ]);
 ```
       
-
-
--- in progress --
+I hope you enjoyed my first blog post. If you have questions feel free to ask me in the disqus box. :-)
