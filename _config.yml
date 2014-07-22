@@ -8,9 +8,9 @@ permalink:        pretty
 # Setup
 title:            Stefan personal blog
 tagline:          
-url:              http://stha.github.io
+url:              http://sth.name
 paginate:         1
-baseurl:          
+baseurl:          /
 author:
   name:           Stefan Hasenstab
   url:            https://twitter.com/b00nb0b
