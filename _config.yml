@@ -6,7 +6,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Stefan personal blog
+title:            Stefans Blog
 tagline:          
 url:              http://sth.name
 paginate:         1
