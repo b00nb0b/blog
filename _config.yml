@@ -10,7 +10,7 @@ title:            Stefan personal blog
 tagline:          
 url:              http://stha.github.io
 paginate:         1
-baseurl:          /
+baseurl:          
 author:
   name:           Stefan Hasenstab
   url:            https://twitter.com/b00nb0b
