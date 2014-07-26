@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mobile page Optimization
+title: Mobile page optimization
 comments: true
 ---
 
@@ -9,5 +9,13 @@ In 2010, the internet research company Comscore already predicted that within 5 
 
 ![Fig. 1: Number of global desktop and mobile users in millions](/public/images/mobile_page_optimization/comscore_traffic_distribution.jpg)
 
-Now we know
+Now we know the reason why its importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered in any kind):
 
+- device display parameters
+- available network bandwidth
+- network latency
+- device performance
+
+In the following part of this article I will explain some of this factors in detail.
+
+### 1. Device display parameters
