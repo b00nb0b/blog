@@ -12,10 +12,25 @@ In 2010, the internet research company Comscore already predicted that within 5 
 Now we know the reason why its importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered in any kind):
 
 - device display parameters
-- available network bandwidth
-- network latency
+- available data network
 - device performance
 
 In the following part of this article I will explain some of this factors in detail.
 
-### 1. Device display parameters
+#### 1. Device display parameters
+
+- display resolution
+- pixel ratio
+- proper font size
+
+#### 2. Available data network
+
+- 1 second concentration window
+- latency (dns, tcp, tls, data)
+- bandwidth
+- blocking elements
+- above-the-fold
+
+#### 3. Device performance
+
+- brower render time
