@@ -7,10 +7,10 @@ I'm software developer at [Campoint](http://www.campoint.net) working on their c
 
 Before I started working at Campoint, I got my M. Eng. in Electrical Engineering and Information Technology at the [University of Applied Sciences of Aschaffenburg](http://www.hs-ab.de/). I did some research on laser material processing with fiber lasers and wrote my master thesis with the german title "Bearbeitungsstrategien mit Faserlasern".
 
-<div>
+<div class="clear">
   <div class="fLeft">
     <img src="{{ site.baseurl }}public/github-32px.png" class="fLeft" style="margin-right: 10px">
-    <div class="clear"><a href="{{ site.github.account }}" width="32" height="32" target="_blank">GitHub</a></div>
+    <div><a href="{{ site.github.account }}" width="32" height="32" target="_blank">GitHub</a></div>
   </div>
   
   <div class="fLeft">
