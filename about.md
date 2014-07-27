@@ -7,6 +7,9 @@ I'm software developer at [Campoint](http://www.campoint.net) working on their c
 
 Before I started working at Campoint, I got my M. Eng. in Electrical Engineering and Information Technology at the [University of Applied Sciences of Aschaffenburg](http://www.hs-ab.de/). I did some research on laser material processing with fiber lasers and wrote my master thesis with the german title "Bearbeitungsstrategien mit Faserlasern".
 
-[![Github Profile]({{ site.baseurl }}public/github-32px.png) http://github.com/stha](http://github.com/stha)
+<div>
+  <div class="fLeft">[![Github Profile]({{ site.baseurl }}public/github-32px.png)http://github.com/stha]</div>
+  <div>(http://github.com/stha)</div>
+</div>
 
 <a href="http://www.xing.com/profile/Stefan_Hasenstab2" target="_blank" rel="me"><img src="http://www.xing.com/img/buttons/1_de_btn.gif" width="85" height="23" alt="Stefan Hasenstab"></a>
