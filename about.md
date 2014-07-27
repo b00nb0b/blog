@@ -10,7 +10,7 @@ Before I started working at Campoint, I got my M. Eng. in Electrical Engineering
 <div>
   <div class="fLeft">
     <img src="{{ site.baseurl }}public/github-32px.png" class="fLeft" style="margin-right: 10px">
-    <div><a href="{{ site.github.account }}" width="32" height="32" target="_blank">GitHub</a></div>
+    <div class="clear"><a href="{{ site.github.account }}" width="32" height="32" target="_blank">GitHub</a></div>
   </div>
   
   <div class="fLeft">
