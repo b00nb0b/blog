@@ -63,3 +63,7 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+.fLeft { float: left; }
+.fRight { float: right; }
+.clear { clear: both; }
