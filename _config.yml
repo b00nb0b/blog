@@ -19,6 +19,7 @@ author:
 # Custom vars
 version:          1.0.0
 github:
+  account:        https://github.com/stha
   repo:           https://github.com/stha/stha.github.io
   
 pages_list:       
