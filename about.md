@@ -14,4 +14,4 @@ Before I started working at Campoint, I got my M. Eng. in Electrical Engineering
   </div>
   
   <a class="fLeft" href="http://www.xing.com/profile/Stefan_Hasenstab2" target="_blank" rel="me"><img src="http://www.xing.com/img/buttons/1_de_btn.gif" width="85" height="23" alt="Stefan Hasenstab"></a>
-  </div>
+</div>
