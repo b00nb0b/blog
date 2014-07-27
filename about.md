@@ -11,7 +11,7 @@ Before I started working at Campoint, I got my M. Eng. in Electrical Engineering
 
 <div style="margin-top: 20px">
   <div class="fLeft" style="width: 150px">
-    <img src="{{ site.baseurl }}public/github-32px.png" class="fLeft" style="margin-right: 10px">
+    <img src="{{ site.baseurl }}public/github-32px.png" alt="GitHub Account" class="fLeft" style="margin-right: 10px">
     <div><a href="{{ site.github.account }}" width="32" height="32" target="_blank">GitHub</a></div>
   </div>
   
