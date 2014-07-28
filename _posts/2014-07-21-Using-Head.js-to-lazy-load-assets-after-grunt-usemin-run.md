@@ -2,11 +2,6 @@
 layout: post
 title: Using Head.js to lazy load assets after grunt usemin run
 comments: true
-tags:
-- grunt
-- head.js
-- usemin
-- performance optimization
 ---
 
 Recently i had to improve the loading behavior of a mobile optimized webpage and used the [PageSpeed Insights - Tool](https://developers.google.com/speed/pagespeed/insights/) from Google to analyze my page. It told me to remove css and javascript resources which blocks "above the fold" content from loading, which means that users with low bandwidth will see nothing except a blank page before the external resources finished loading. Now there are several ways to avoid this. 
