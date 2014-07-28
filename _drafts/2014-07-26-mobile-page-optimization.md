@@ -26,6 +26,8 @@ Concerning the display, you should definitely consider the **display resolution*
 - for other text use only sizes relative to the standard text
 - avoid the use of to many different font types
 
+For further reading I recommend to take a look into the [google developer help pages](https://developers.google.com/speed/docs/insights/UseLegibleFontSizes).
+
 
 Also try to keep an eye on the pixel denstity of the devices. Disrespecting this can lead to a cloudy appearance of images on your website. In `css` you can write specific code for each pixel density by using `media queries`:
 
