@@ -9,7 +9,7 @@ layout: default
 </div>
 {% if page.tags %}
 <div>
-  {% for tag in page.tags | split:',' %}{% endfor %}
+  {% for tag in page.tags | split:',' %}{{ tag }}{% endfor %}
 </div>
 {% endif %}
 <div class="related">
