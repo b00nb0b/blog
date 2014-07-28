@@ -7,12 +7,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
 </div>
-{% if page.tags and false %}
-<div>
-  {% assign tags = page.tags | split: ',' %}
-  {% for tag in tags %}<a href="#{{ tag }}">{{ tag }}</a>{% endfor %}
-</div>
-{% endif %}
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
