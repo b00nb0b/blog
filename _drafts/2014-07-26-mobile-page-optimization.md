@@ -8,6 +8,7 @@ In 2010, the internet research company Comscore already predicted that within 5 
 
 
 ![Fig. 1: Number of global desktop and mobile users in millions]({{ site.baseurl }}assets/mobile_page_optimization/comscore_traffic_distribution.jpg)
+<a name="fig1">Fig. 1</a>: Number of global desktop and mobile users in millions
 
 Now we know the reason why its importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered in any kind):
 
@@ -97,13 +98,24 @@ HTML is rendered sequentially, so if the browser receives adequate visible conte
 - don't load assets from other domains (which would cause another dns lookup, handshake.. and so on)
 - use proper browser caching (cache times about 2 or more weeks), if necessary use a [cache-buster](https://github.com/cbas/grunt-rev) to force re-request of assets
 - use gzip compression (don't forget about webfonts)
+- if you can, use [SPDY](http://www.chromium.org/spdy/spdy-whitepaper). It will give you a performance increase of about 30%
 
 #### 3. Device performance
 
-Mind the critical rendering path. 
+Mind the critical rendering path. In [Figure 2](#fig2), you can see how the browser renders a HTML document. HTML is parsed into the DOM (Document Object Model) while CSS becomes
+the CSSOM (Css Object Model). Both Models put together end up in the RenderTree, which can be layouted and finally paint by the browser. (For now, this information should be enough.
+If you want to know it more detailed, then I encourage you to read this [document published by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/).)
 
-- browser render time
+![Fig. 2: The critical rendering path]({{ site.baseurl }}assets/mobile_page_optimization/critical_rendering_path.png)
+<a name="fig2">Fig. 2</a>: The critical rendering path ([Grigorik 2012](http://calendar.perfplanet.com/2012/deciphering-the-critical-rendering-path/))
 
+This process takes time, which can vary between different devices. Furthermore both the DOM and CSSOM can manipulated by javascript. And guess what happens if one of the models is changed --
+we build the RenderTree, Layout and Paint... (and the user has to wait).
+
+- minimize the amount of DOM/CSSSOM manipulations
+- remove unnecessary HTML/CSS, so the browser doesn't need to put it into the DOM/CSSOM
+- provide the browser with width and height information in `<img>` tags, so the browser can already calculate the exact size of the element in the RenderTree (otherwise a recalculation is necessary when the image is loaded)
+- use hardware acceleration (rendering on the GPU) with a CSS3 transformation `-webkit-transform: translateZ(0);` for example
 
 ##### Literature
 
