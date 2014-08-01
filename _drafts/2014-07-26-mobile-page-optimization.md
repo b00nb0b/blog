@@ -7,7 +7,7 @@ comments: true
 In 2010, the internet research company Comscore already predicted that within 5 year the amount of mobile users will surpass the amount of desktop users. As you can see in figure 1, the intersection will happen somewhere in 2014 which is actually the date on which this blog post is written.
 
 
-![Fig. 1: Number of global desktop and mobile users in millions]({{ site.baseurl }}public/images/mobile_page_optimization/comscore_traffic_distribution.jpg =100%)
+![Fig. 1: Number of global desktop and mobile users in millions]({{ site.baseurl }}assets/mobile_page_optimization/comscore_traffic_distribution.jpg)
 
 Now we know the reason why its importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered in any kind):
 
@@ -58,12 +58,52 @@ The example above (taken from [here](http://blog.scur.pl/2012/06/variable-media-
 
 #### 2. Available data network
 
-- 1 second concentration window
-- latency (dns, tcp, tls, data)
-- bandwidth
-- blocking elements
-- above-the-fold
+According [Nielsen 1993](http://www.nngroup.com/articles/response-times-3-important-limits/),  the average website user is willing to wait for an maximum amount of 1.0 seconds until he loses focus on the dialogue. So the goal has to be to serve the visible content within this time frame.
+Especially in mobile networks this 1 second time frame often causes trouble because of high build-in network latency. [Table 1](#table1) shows the average network latency on mobile networks of AT&T (the largest U.S. mobile provider). This data represents the duration of one network round-trip time 'RTT' (client->server->client) which
+for example on EDGE or GPRS takes more then the half of our one second budget.
+
+
+ <a name="table1">Table 1</a>. AT&T latencies for deployed 2G–4G networks (Grigorik 2014)
+
+|           |LTE	    |HSPA+	    |HSPA	    |EDGE	    |GPRS       |
+|-----------|----------|-----------|-----------|-----------|-----------|
+|Latency    |40–50 ms  |100–200 ms |150–400 ms |600–750 ms |600–750 ms |
+
+To fully understand the consequences you need to know how a http(s) request exactly works. Usually the flow on mobile looks like this:
+
+```
+Request -> Control Plane -> DNS Lookup -> TCP Handshake
+( -> TLS Handshake) -> Data
+```
+
+and takes the following timings into account:
+
+1. Control Plane: depends on network (50 - 2500ms)
+2. DNS Lookup: 1 RTT
+3. TCP Handshake 1 RTT (existing connection) - 3 RTT (new connection)
+4. TLS Handshake (https only): 1-2 RTT
+5. Data 1-n RTT
+
+Below the bottom line, even a relatively up-to-date connection (3G+) consumes at least the half of our budget to establish
+only a simple http connection. Another limiting factor which comes additionally is the [tcp slow-start](http://en.wikipedia.org/wiki/Slow-start) strategy.
+Simply explained, this feature causes a slow increase of the TCP congestion window which limits the amount of data which can be transferred in the early phase of the connection.
+On most of the systems, the initial congestion window is set to 10 segments, which means a total data of about 14kb. That's about the theory behind connections and latency.
+
+HTML is rendered sequentially, so if the browser receives adequate visible content it can be visible within the first data transmission round-trip. So our consequences are:
+
+- provide visible content on the very upper part of your html document (the so called [above-the-fold](http://en.wikipedia.org/wiki/Above_the_fold) content)
+- avoid blocking elements in the head of your document (no `<script>` or `<link rel="stylesheet">`)
+- for single page application try to split your javascript code and put all essential code inline (which not blocks rendering)
+- don't load assets from other domains (which would cause another dns lookup, handshake.. and so on)
+- use proper browser caching (cache times about 2 or more weeks), if necessary use a [cache-buster](https://github.com/cbas/grunt-rev) to force re-request of assets
+- use gzip compression (don't forget about webfonts)
 
 #### 3. Device performance
 
 - brower render time
+
+
+##### Literature
+
+[Nielsen 1993] J. Nielson, *Response Times: The 3 Important Limits*, 1993
+[Grigorik 2014] I. Grigorik, *High Performance Browser Networking*, O'Reilly, 2014.
