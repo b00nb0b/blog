@@ -78,10 +78,10 @@ Request -> Control Plane -> DNS Lookup -> TCP Handshake
 
 and takes the following timings into account:
 
-1. Control Plane: depends on network (50 - 2500ms)
+1. Control Plane: depends on network (50 - 2500ms, one time cost)
 2. DNS Lookup: 1 RTT
-3. TCP Handshake 1 RTT (existing connection) - 3 RTT (new connection)
-4. TLS Handshake (https only): 1-2 RTT
+3. TCP Handshake 1 RTT
+4. TLS Handshake (secure connections only): 1-2 RTT
 5. Data 1-n RTT
 
 Below the bottom line, even a relatively up-to-date connection (3G+) consumes at least the half of our budget to establish
@@ -100,7 +100,7 @@ HTML is rendered sequentially, so if the browser receives adequate visible conte
 
 #### 3. Device performance
 
-- brower render time
+- browser render time
 
 
 ##### Literature
