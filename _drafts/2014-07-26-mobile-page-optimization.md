@@ -100,6 +100,8 @@ HTML is rendered sequentially, so if the browser receives adequate visible conte
 
 #### 3. Device performance
 
+Mind the critical rendering path. 
+
 - browser render time
 
 
