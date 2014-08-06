@@ -58,7 +58,7 @@ The example above (taken from [here](http://blog.scur.pl/2012/06/variable-media-
 
 #### 2. Available data network
 
-According [Nielsen 1993](http://www.nngroup.com/articles/response-times-3-important-limits/),  the average website user is willing to wait for an maximum amount of 1.0 seconds until he loses focus on the dialogue. So the goal has to be to serve the visible content within this time frame.
+According to [Nielsen 1993](http://www.nngroup.com/articles/response-times-3-important-limits/),  the average website user is willing to wait for an maximum amount of 1.0 seconds until he loses focus on the dialogue. So the goal has to be to serve the visible content within this time frame.
 Especially in mobile networks this 1 second time frame often causes trouble because of high build-in network latency. [Table 1](#table1) shows the average network latency on mobile networks of AT&T (the largest U.S. mobile provider). This data represents the duration of one network round-trip time 'RTT' (client->server->client) which
 for example on EDGE or GPRS takes more then the half of our one second budget.
 
