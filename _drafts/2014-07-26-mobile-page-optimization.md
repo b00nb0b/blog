@@ -94,7 +94,7 @@ HTML is rendered sequentially, so if the browser receives adequate visible conte
 
 - provide visible content on the very upper part of your html document (the so called [above-the-fold](http://en.wikipedia.org/wiki/Above_the_fold) content)
 - avoid blocking elements in the head of your document (no `<script>` or `<link rel="stylesheet">`)
-- for single page application try to split your javascript code and put all essential code inline (which not blocks rendering)
+- for single page application try to split your javascript code and put all essential code inline (which does not block rendering)
 - don't load assets from other domains (which would cause another dns lookup, handshake.. and so on)
 - use proper browser caching (cache times about 2 or more weeks), if necessary use a [cache-buster](https://github.com/cbas/grunt-rev) to force re-request of assets
 - use gzip compression (don't forget about webfonts)
