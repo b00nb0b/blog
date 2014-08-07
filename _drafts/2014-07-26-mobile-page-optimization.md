@@ -117,6 +117,10 @@ we build the RenderTree, Layout and Paint... (and the user has to wait).
 - provide the browser with width and height information in `<img>` tags, so the browser can already calculate the exact size of the element in the RenderTree (otherwise a recalculation is necessary when the image is loaded)
 - use hardware acceleration (rendering on the GPU) with a CSS3 transformation `-webkit-transform: translateZ(0);` for example
 
+#### Conclusion
+
+If you want to optimize your website for mobile devices, try to provide the user with useful data under 1000 ms. Its most likely that you aren't able to fully load and render the whole website within this time frame, but you can provide some useful information like a loading indicator or maybe some basic text. Use a proper font size to create a good user experience on your site. Use HTML5/CSS3 features, because almost all modern (mobile) web browsers supports it.
+
 ##### Literature
 
 [Nielsen 1993] J. Nielson, *Response Times: The 3 Important Limits*, 1993
