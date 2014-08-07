@@ -109,12 +109,12 @@ If you want to know more details, then I encourage you to read this [document pu
 ![Fig. 2: The critical rendering path]({{ site.baseurl }}assets/mobile_page_optimization/critical_rendering_path.png)
 <a name="fig2">Fig. 2</a>: The critical rendering path ([Grigorik 2012](http://calendar.perfplanet.com/2012/deciphering-the-critical-rendering-path/))
 
-This process takes time, which can vary between different devices. Furthermore both the DOM and CSSOM can manipulated by javascript. And guess what happens if one of the models is changed --
-we build the RenderTree, Layout and Paint... (and the user has to wait).
+This process takes time, which can vary between different devices. Furthermore both the DOM and CSSOM can be manipulated by javascript. And guess what happens if one of the models is changed --
+we build the RenderTree, layout and paint... (and the user has to wait).
 
-Another problem is the around 300 ms click delay on touch devices. The smartphone doesn't know if you want to perform a tap or a double-tap, so it waits around 300 ms to decide if it recognizes whether the first or the second one.
+Another problem is the around 300 ms click delay on touch devices. The smartphone doesn't know if you want to perform a tap or a double-tap, so it waits around 300 ms to decide if it recognizes either the first or the second one.
 
-- minimize the amount of DOM/CSSSOM manipulations
+- minimize the amount of DOM/CSSOM manipulations
 - remove unnecessary HTML/CSS, so the browser doesn't need to put it into the DOM/CSSOM
 - provide the browser with width and height information in `<img>` tags, so the browser can already calculate the exact size of the element in the RenderTree (otherwise a recalculation is necessary when the image is loaded)
 - use hardware acceleration (rendering on the GPU) with a CSS3 transformation `-webkit-transform: translateZ(0);` for example
@@ -122,7 +122,7 @@ Another problem is the around 300 ms click delay on touch devices. The smartphon
 
 #### Conclusion
 
-If you want to optimize your website for mobile devices, try to provide the user with useful data under 1000 ms. Its most likely that you aren't able to fully load and render the whole website within this time frame, but you can provide some useful information like a loading indicator or maybe some basic text. Use a proper font size to create a good user experience on your site. Use HTML5/CSS3 features, because almost all modern (mobile) web browsers supports it. Double check your static file cache headers and check for enabled gzip compression. If necessary ask your DevOps team to set it up properly.
+If you want to optimize your website for mobile devices, try to provide the user with useful data under 1000 ms. Its most likely that you aren't able to fully load and render the whole website within this time frame, but you can provide some useful information like a loading indicator or maybe some basic text. Use a proper font size to create a good user experience on your site. Use HTML5/CSS3 features, because almost all modern (mobile) web browsers support it. Double check your static file cache headers and check for enabled gzip compression. If necessary ask your DevOps team to set it up properly.
 
 ##### Literature
 
