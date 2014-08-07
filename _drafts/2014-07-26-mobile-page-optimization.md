@@ -30,7 +30,7 @@ Concerning the display, you should definitely consider the **display resolution*
 For further reading I recommend to take a look into the [google developer help pages](https://developers.google.com/speed/docs/insights/UseLegibleFontSizes).
 
 
-Also try to keep an eye on the pixel denstity of the devices. Disrespecting this can lead to a cloudy appearance of images on your website. In `css` you can write specific code for each pixel density by using [media queries](http://www.w3.org/TR/css3-mediaqueries/):
+Also try to keep an eye on the pixel denstity of the devices. Disrespecting this can lead to a cloudy appearance of images on your website. There is a feature `css`, called `device-pixel-ratio` which specifies how a css pixel relates to a device pixel (default is 1.0).  You can write specific code for each pixel density by using [media queries](http://www.w3.org/TR/css3-mediaqueries/):
 
 If you can use [lesscss](http://lesscss.org), the following piece of code will give you a highdensity media query:
 
