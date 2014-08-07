@@ -112,6 +112,8 @@ If you want to know it more detailed, then I encourage you to read this [documen
 This process takes time, which can vary between different devices. Furthermore both the DOM and CSSOM can manipulated by javascript. And guess what happens if one of the models is changed --
 we build the RenderTree, Layout and Paint... (and the user has to wait).
 
+Another problem is the around 300 ms click delay on touch devices. The smartphone doesn't know if you want to perform a tap or a double-tap, so it waits around 300 ms to decide if it recognizes whether the first or the second one.
+
 - minimize the amount of DOM/CSSSOM manipulations
 - remove unnecessary HTML/CSS, so the browser doesn't need to put it into the DOM/CSSOM
 - provide the browser with width and height information in `<img>` tags, so the browser can already calculate the exact size of the element in the RenderTree (otherwise a recalculation is necessary when the image is loaded)
