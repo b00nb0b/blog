@@ -103,8 +103,8 @@ HTML is rendered sequentially, so if the browser receives adequate visible conte
 #### 3. Device performance
 
 Mind the critical rendering path. In [Figure 2](#fig2), you can see how the browser renders a HTML document. HTML is parsed into the DOM (Document Object Model) while CSS becomes
-the CSSOM (Css Object Model). Both models put together end up in the RenderTree, which can be layouted and finally painted by the browser. (For now, this information should be enough.
-If you want to know it more detailed, then I encourage you to read this [document published by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/).)
+the CSSOM (CSS Object Model). Both models put together end up in the RenderTree, which can be layouted and finally painted by the browser. (For now, this information should be enough.
+If you want to know more details, then I encourage you to read this [document published by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/).)
 
 ![Fig. 2: The critical rendering path]({{ site.baseurl }}assets/mobile_page_optimization/critical_rendering_path.png)
 <a name="fig2">Fig. 2</a>: The critical rendering path ([Grigorik 2012](http://calendar.perfplanet.com/2012/deciphering-the-critical-rendering-path/))
