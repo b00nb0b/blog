@@ -116,6 +116,7 @@ we build the RenderTree, Layout and Paint... (and the user has to wait).
 - remove unnecessary HTML/CSS, so the browser doesn't need to put it into the DOM/CSSOM
 - provide the browser with width and height information in `<img>` tags, so the browser can already calculate the exact size of the element in the RenderTree (otherwise a recalculation is necessary when the image is loaded)
 - use hardware acceleration (rendering on the GPU) with a CSS3 transformation `-webkit-transform: translateZ(0);` for example
+- use something like Google's FastButtons to avoid the 300 ms touch delay ([Google Article](https://developers.google.com/mobile/articles/fast_buttons) / [GitHub Repo](https://github.com/alexblack/google-fastbutton))
 
 #### Conclusion
 
