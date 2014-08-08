@@ -20,7 +20,7 @@ In the following part of this article I will explain some of this factors in det
 
 #### 1. Device display parameters
 
-Concerning the display, you should definitely consider the **display resolution** of the device. There is a wide spread of available resolutions and also a difference in devices pixel density. It's crucial to choose a proper font size. You should always try to use `px`, because it's related to the device reference pixel. If you use other units, the font size can differ from device to device. There are some easy rules:
+Concerning the display, you should definitely consider the display resolution of the device. There is a wide spread of available resolutions and also a difference in devices pixel density. It's crucial to choose a proper font size. You should always try to use `px`, because it's related to the device reference pixel. If you use other units, the font size can differ from device to device. There are some easy rules:
 
 - use `px` over other units to define font sizes (because it's related to the [reference pixel](http://www.w3.org/TR/CSS2/syndata.html#length-units))
 - use a font size of `16px` for standard text
