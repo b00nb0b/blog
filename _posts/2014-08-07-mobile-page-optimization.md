@@ -122,7 +122,7 @@ Another problem is the around 300 ms click delay on touch devices. The smartphon
 
 #### Conclusion
 
-If you want to optimize your website for mobile devices, try to provide the user with useful data under 1000 ms. Its most likely that you aren't able to fully load and render the whole website within this time frame, but you can provide some useful information like a loading indicator or maybe some basic text. Use a proper font size to create a good user experience on your site. Use HTML5/CSS3 features, because almost all modern (mobile) web browsers support it. Double check your static file cache headers and check for enabled gzip compression. If necessary ask your DevOps team to set it up properly.
+If you want to optimize your website for mobile devices, try to provide the user with useful data under 1000 ms. It's most likely that you aren't able to fully load and render the whole website within this time frame, but you can provide some useful information like a loading indicator or maybe some basic text. Use a proper font size to create a good user experience on your site. Use HTML5/CSS3 features, because almost all modern (mobile) web browsers support it. Double check your static file cache headers and check for enabled gzip compression. If necessary ask your DevOps team to set it up properly.
 
 ##### Literature
 
