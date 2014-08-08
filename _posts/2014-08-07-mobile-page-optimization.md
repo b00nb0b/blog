@@ -10,7 +10,7 @@ In 2010, the internet research company Comscore already predicted that within 5 
 ![Fig. 1: Number of global desktop and mobile users in millions]({{ site.baseurl }}assets/mobile_page_optimization/comscore_traffic_distribution.jpg)
 <a name="fig1">Fig. 1</a>: Number of global desktop and mobile users in millions
 
-Now we know the reason why its importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered in any kind):
+Now we know the reason why it's importent to optimze our webpages for mobile traffic. There are several factors which should be taken into account while optimizing for mobile (the list is not ordered by any kind):
 
 - device display parameters
 - available data network
