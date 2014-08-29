@@ -28,5 +28,5 @@ Before I started working at Campoint, I got my M. Eng. in Electrical Engineering
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/u/0/112714640828896691187" data-rel="author"></div>
   </div>
-  
+  <div style="clear:both"></div>
 </div>
