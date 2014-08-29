@@ -24,4 +24,9 @@ Before I started working at Campoint, I got my M. Eng. in Electrical Engineering
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
   
+  <div class="fLeft" style="width: 150px">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/u/0/112714640828896691187" data-rel="author"></div>
+  </div>
+  
 </div>
