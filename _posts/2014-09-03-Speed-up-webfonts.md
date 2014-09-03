@@ -15,7 +15,7 @@ can get it from [Google Code](https://code.google.com/p/font-compression-referen
 
 To get started just open a terminal and type:
 
-```
+```bash
 git clone https://code.google.com/p/font-compression-reference/
 cd font-compression-reference/woff2
 make clean all
