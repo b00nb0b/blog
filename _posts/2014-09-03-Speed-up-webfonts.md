@@ -4,7 +4,7 @@ title: Speed up your webfonts by using the woff2 format
 comments: true
 ---
 
-Today, I stumble on the new webfont format `woff2`, which is natively supported by Chrome 36 and above. The file format
+Today, I stumbled on the new webfont format `woff2`, which is natively supported by Chrome 36 and above. The file format
  delivers file size savings between 30 and 50% in comparison to `woff`. This saving can directly result in a better user experience
  on your site and can be achieved with a single additional step in your build process.
 
