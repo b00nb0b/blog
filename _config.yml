@@ -2,7 +2,7 @@
 markdown:         redcarpet
 redcarpet:
   extensions: ["tables"]
-pygments:         true
+highlighter:      true
 
 #markdown:         kramdown
 #highlighter:      pygments
