@@ -3,7 +3,7 @@ markdown:         redcarpet
 redcarpet:
   extensions: ["tables"]
 
-highlighter:      pygments
+pygments:         true
 
 # Permalinks
 permalink:        pretty
