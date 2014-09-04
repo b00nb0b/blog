@@ -43,7 +43,7 @@ If you can use [lesscss](http://lesscss.org), the following piece of code will g
 
 You can now use it with:
 
-```css
+```
 .logo {
     background: url(/static/images/logo.png) no-repeat 0 0;
  
