@@ -34,16 +34,16 @@ Also try to keep an eye on the pixel denstity of the devices. Disrespecting this
 
 If you can use [lesscss](http://lesscss.org), the following piece of code will give you a highdensity media query:
 
-{% highlight less %}
+```less
 @highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
               ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
               ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
               ~"only screen and (min-device-pixel-ratio: 1.5)";
-{% endhighlight %}
+```
 
 You can now use it with:
 
-{% highlight css %}
+```css
 .logo {
     background: url(/static/images/logo.png) no-repeat 0 0;
  
@@ -52,7 +52,7 @@ You can now use it with:
         background-size: contain;
     }
 }
-{% endhighlight %}
+```
 
 The example above (taken from [here](http://blog.scur.pl/2012/06/variable-media-queries-less-css/)) sets a double sized background image to the `logo` for high density displays because otherwise, the graphic would appear cloudy. 
 
@@ -72,10 +72,10 @@ for example on EDGE or GPRS takes more then the half of our one second budget.
 
 To fully understand the consequences you need to know how a http(s) request exactly works. Usually the flow on mobile looks like this:
 
-{% highlight %}
+```
 Request -> Control Plane -> DNS Lookup -> TCP Handshake
 ( -> TLS Handshake) -> Data
-{% endhighlight %}
+```
 
 and takes the following timings into account:
 
