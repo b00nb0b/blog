@@ -8,13 +8,13 @@ Recently I had to improve the loading behavior of a mobile optimized webpage and
 
 ##### 1. Putting the resource on the end of the `body` block:
 
-{% highlight html %}
+```html
 <body>
   <p>Some Content here</p>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
-{% endhighlight %}
+```
 
 This approach works only with javascript tags, because according to the [w3c specifications](http://www.w3.org/TR/html5/document-metadata.html#the-link-element) `<link>` elements including `rel=""` attributes are restricted to the `<head>` element.
 
