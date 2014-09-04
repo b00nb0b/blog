@@ -72,7 +72,7 @@ for example on EDGE or GPRS takes more then the half of our one second budget.
 
 To fully understand the consequences you need to know how a http(s) request exactly works. Usually the flow on mobile looks like this:
 
-{% highlight css %}
+{% highlight %}
 Request -> Control Plane -> DNS Lookup -> TCP Handshake
 ( -> TLS Handshake) -> Data
 {% endhighlight %}
