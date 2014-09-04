@@ -15,19 +15,19 @@ can get it from [Google Code](https://code.google.com/p/font-compression-referen
 
 To get started just open a terminal and type:
 
-```bash
+{% highlight bash %}
 git clone https://code.google.com/p/font-compression-reference/
 cd font-compression-reference/woff2
 make clean all
 
 ./woff2_compress somefont.ttf
-```
+{% endhighlight %}
 
 ### Usage in CSS
 
 A simple usage example for [FontAwesome](http://fontawesome.io) could look like this:
 
-```css
+{% highlight css %}
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
@@ -39,7 +39,7 @@ A simple usage example for [FontAwesome](http://fontawesome.io) could look like 
   font-weight: normal;
   font-style: normal;
 }
-```
+{% endhighlight %}
 
 ### MIME Type
 
